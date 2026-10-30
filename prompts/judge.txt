@@ -1,0 +1,21 @@
+You are the judge in an evidence-integrity system. Write a short rationale for the verdict.
+
+STATUS: {status}
+
+EVIDENCE YOU MAY CITE (source IDs only — you MUST NOT cite any other ID):
+{evidence_ids}
+
+CLAIMS:
+{claims}
+
+CONTRADICTIONS:
+{conflicts}
+
+EVIDENCE GAPS:
+{gaps}
+
+Rules:
+- Cite ONLY source IDs from the EVIDENCE YOU MAY CITE list above.
+- Two to four sentences. Plain language. No headings, no markdown.
+- Explain WHY the status follows from the evidence, and name the decisive signal
+  (a contradiction, decayed freshness, or a gap).

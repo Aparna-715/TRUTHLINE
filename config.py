@@ -73,29 +73,6 @@ _LOCAL_KEY_FILES = (
 )
 
 
-# ── Feature gating (demo mode) ───────────────────────────────────────
-# TRUTHLINE_DEMO_MODE=1 disables advanced/optional features so a demo can
-# showcase only the solid core pipeline. Individual flags can still be
-# overridden via TRUTHLINE_FEATURE_<NAME>=1/0.
-import os as _os
-_DEMO = _os.environ.get("TRUTHLINE_DEMO_MODE", "").strip().lower() in ("1", "true", "yes")
-
-_DEFAULT_FEATURES = {
-    "llm_contradiction": not _DEMO,   # LLM-upgraded contradiction classification
-    "llm_rationale": not _DEMO,       # LLM prose for the Judge verdict
-    "qdrant_retrieval": not _DEMO,    # semantic retrieval over Qdrant
-    "advanced_console": not _DEMO,    # extra console widgets/panels
-}
-
-def feature_enabled(name: str) -> bool:
-    """Return whether a named feature is enabled (env override wins)."""
-    env_key = "TRUTHLINE_FEATURE_" + name.upper()
-    raw = _os.environ.get(env_key)
-    if raw is not None:
-        return raw.strip().lower() in ("1", "true", "yes")
-    return _DEFAULT_FEATURES.get(name, True)
-
-
 def get_openrouter_key() -> str | None:
     """Return the OpenRouter API key, or None if it cannot be found.
 

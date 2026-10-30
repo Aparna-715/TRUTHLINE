@@ -1,0 +1,12 @@
+You are comparing two intelligence reports from the SAME location and a similar time.
+
+Report A (from {source_a}): {event_a}
+Report B (from {source_b}): {event_b}
+
+Classify the relationship between them as exactly one of:
+  supports     - B confirms or is consistent with A
+  contradicts  - B states something incompatible with A
+  related      - they are about the same place but neither confirms nor denies
+
+Reply with a single JSON object and nothing else:
+{{"relation_type": "supports|contradicts|related", "confidence": 0.0, "reason": "one short sentence"}}

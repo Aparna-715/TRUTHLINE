@@ -1,0 +1,18 @@
+Extract factual claims from the intelligence report below.
+
+For each claim return a JSON object with these fields:
+  subject   - what the claim is about (usually the location)
+  predicate - the relation or state (e.g. "has_activity", "vehicle_count")
+  object    - the value (e.g. "3 vehicles", "none")
+  location  - the grid or place name
+  event_time- ISO 8601 timestamp if the report states one
+  source_id - the report's own id
+
+Rules:
+- Return ONLY a JSON array. No prose, no markdown fences.
+- One object per distinct factual assertion.
+- If the report states no timestamp, use null for event_time.
+- Do not infer facts that are not stated.
+
+Report:
+{text}

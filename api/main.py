@@ -30,7 +30,7 @@ from agents.evidence_gap import check_gaps  # noqa: E402
 from agents.ingestion import ingest  # noqa: E402
 from agents.judge import judge  # noqa: E402
 from agents.pipeline import investigate, load_all_cases  # noqa: E402
-from config import STALE_THRESHOLD, TAU, feature_enabled  # noqa: E402
+from config import STALE_THRESHOLD, TAU  # noqa: E402
 from db.store import (  # noqa: E402
     clear_sources,
     connect,
@@ -380,8 +380,8 @@ def api_investigate(req: InvestigateRequest) -> dict:
     result = investigate(
         case,
         scenario_time=req.scenario_time,
-        llm_classify=_make_llm_classify() if feature_enabled("llm_contradiction") else None,
-        llm_rationale=_make_llm_rationale() if feature_enabled("llm_rationale") else None,
+        llm_classify=_make_llm_classify(),
+        llm_rationale=_make_llm_rationale(),
     )
 
     conn = connect()
@@ -891,8 +891,8 @@ def investigate_area(scenario_time: str | None = None, zone: str | None = None) 
     return investigate(
         case,
         scenario_time=scenario_time or _naive_now(),
-        llm_classify=_make_llm_classify() if feature_enabled("llm_contradiction") else None,
-        llm_rationale=_make_llm_rationale() if feature_enabled("llm_rationale") else None,
+        llm_classify=_make_llm_classify(),
+        llm_rationale=_make_llm_rationale(),
     )
 
 
