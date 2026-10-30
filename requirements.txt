@@ -1,0 +1,26 @@
+# TRUTHLINE Python dependencies
+# Install with:  pip install -r requirements.txt
+
+# ── Web layer ──────────────────────────────────────────────────────────
+fastapi>=0.104.0
+uvicorn>=0.24.0
+httpx>=0.25.0
+python-multipart>=0.0.6
+
+# ── Validation ─────────────────────────────────────────────────────────
+pydantic>=2.5.0
+
+# ── Graph + plotting ───────────────────────────────────────────────────
+networkx>=3.2
+matplotlib>=3.8.0
+
+# ── UI dataframes ──────────────────────────────────────────────────────
+pandas>=2.0.0
+
+# ── Vector store (Step 1 / retrieval) ──────────────────────────────────
+# Required for semantic retrieval. The code falls back to a deterministic
+# hashing embedder if this is not installed, so the demo still runs without it.
+qdrant-client>=1.7.0
+
+# Optional: real semantic embeddings. Without it the hashing fallback is used.
+# sentence-transformers>=3.0.0
