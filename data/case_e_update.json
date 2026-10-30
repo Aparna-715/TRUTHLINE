@@ -1,0 +1,32 @@
+{
+  "case_id": "E",
+  "name": "UPDATE",
+  "description": "Newer satellite report overrides older drone/ground reports.",
+  "expected_verdict": "updated",
+  "reports": [
+    {
+      "id": "E1",
+      "source": "Drone-Alpha",
+      "source_type": "drone",
+      "location": "Grid-5",
+      "event": "4 vehicles stationary",
+      "timestamp": "2026-09-18T14:00:00"
+    },
+    {
+      "id": "E2",
+      "source": "Ground-Beta",
+      "source_type": "ground",
+      "location": "Grid-5",
+      "event": "4 vehicles stationary",
+      "timestamp": "2026-09-18T14:05:00"
+    },
+    {
+      "id": "E3",
+      "source": "Satellite-1",
+      "source_type": "satellite",
+      "location": "Grid-5",
+      "event": "4 vehicles departed",
+      "timestamp": "2026-09-18T14:55:00"
+    }
+  ]
+}

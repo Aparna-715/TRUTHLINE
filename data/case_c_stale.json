@@ -1,0 +1,24 @@
+{
+  "case_id": "C",
+  "name": "STALE",
+  "description": "All reports are from 6+ hours ago. Evidence has decayed to zero.",
+  "expected_verdict": "stale",
+  "reports": [
+    {
+      "id": "C1",
+      "source": "Drone-Alpha",
+      "source_type": "drone",
+      "location": "Grid-3",
+      "event": "2 vehicles parked",
+      "timestamp": "2026-09-18T08:00:00"
+    },
+    {
+      "id": "C2",
+      "source": "Ground-Beta",
+      "source_type": "ground",
+      "location": "Grid-3",
+      "event": "2 vehicles parked",
+      "timestamp": "2026-09-18T08:15:00"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "scenario_time": "2026-09-18T15:00:00",
+  "cases": {
+    "A": {
+      "case_id": "A",
+      "name": "SUPPORTED",
+      "description": "Three independent sources report the same event at the same location.",
+      "expected_verdict": "supported",
+      "reports": [
+        {
+          "id": "A1",
+          "source": "Drone-Alpha",
+          "source_type": "drone",
+          "location": "Grid-7",
+          "event": "3 vehicles detected",
+          "timestamp": "2026-09-18T14:55:00"
+        },
+        {
+          "id": "A2",
+          "source": "Ground-Beta",
+          "source_type": "ground",
+          "location": "Grid-7",
+          "event": "3 vehicles detected",
+          "timestamp": "2026-09-18T14:57:00"
+        },
+        {
+          "id": "A3",
+          "source": "Satellite-1",
+          "source_type": "satellite",
+          "location": "Grid-7",
+          "event": "3 vehicles detected",
+          "timestamp": "2026-09-18T14:56:00"
+        }
+      ]
+    },
+    "B": {
+      "case_id": "B",
+      "name": "CONFLICTING",
+      "description": "Two sources report opposite things at the same location.",
+      "expected_verdict": "conflicting",
+      "reports": [
+        {
+          "id": "B1",
+          "source": "Drone-Alpha",
+          "source_type": "drone",
+          "location": "Grid-9",
+          "event": "5 vehicles moving north",
+          "timestamp": "2026-09-18T14:59:00"
+        },
+        {
+          "id": "B2",
+          "source": "Ground-Charlie",
+          "source_type": "ground",
+          "location": "Grid-9",
+          "event": "No activity detected",
+          "timestamp": "2026-09-18T14:58:00"
+        }
+      ]
+    },
+    "C": {
+      "case_id": "C",
+      "name": "STALE",
+      "description": "All reports are from 6+ hours ago. Evidence has decayed to zero.",
+      "expected_verdict": "stale",
+      "reports": [
+        {
+          "id": "C1",
+          "source": "Drone-Alpha",
+          "source_type": "drone",
+          "location": "Grid-3",
+          "event": "2 vehicles parked",
+          "timestamp": "2026-09-18T08:00:00"
+        },
+        {
+          "id": "C2",
+          "source": "Ground-Beta",
+          "source_type": "ground",
+          "location": "Grid-3",
+          "event": "2 vehicles parked",
+          "timestamp": "2026-09-18T08:15:00"
+        }
+      ]
+    },
+    "D": {
+      "case_id": "D",
+      "name": "INSUFFICIENT",
+      "description": "Only one source reports an event. No corroboration.",
+      "expected_verdict": "uncertain",
+      "reports": [
+        {
+          "id": "D1",
+          "source": "Satellite-2",
+          "source_type": "satellite",
+          "location": "Grid-12",
+          "event": "Heat signatures detected",
+          "timestamp": "2026-09-18T14:00:00"
+        }
+      ]
+    },
+    "E": {
+      "case_id": "E",
+      "name": "UPDATE",
+      "description": "Newer satellite report overrides older drone/ground reports.",
+      "expected_verdict": "updated",
+      "reports": [
+        {
+          "id": "E1",
+          "source": "Drone-Alpha",
+          "source_type": "drone",
+          "location": "Grid-5",
+          "event": "4 vehicles stationary",
+          "timestamp": "2026-09-18T14:00:00"
+        },
+        {
+          "id": "E2",
+          "source": "Ground-Beta",
+          "source_type": "ground",
+          "location": "Grid-5",
+          "event": "4 vehicles stationary",
+          "timestamp": "2026-09-18T14:05:00"
+        },
+        {
+          "id": "E3",
+          "source": "Satellite-1",
+          "source_type": "satellite",
+          "location": "Grid-5",
+          "event": "4 vehicles departed",
+          "timestamp": "2026-09-18T14:55:00"
+        }
+      ]
+    }
+  }
+}

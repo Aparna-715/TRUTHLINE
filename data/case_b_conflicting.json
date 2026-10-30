@@ -1,0 +1,24 @@
+{
+  "case_id": "B",
+  "name": "CONFLICTING",
+  "description": "Two sources report opposite things at the same location.",
+  "expected_verdict": "conflicting",
+  "reports": [
+    {
+      "id": "B1",
+      "source": "Drone-Alpha",
+      "source_type": "drone",
+      "location": "Grid-9",
+      "event": "5 vehicles moving north",
+      "timestamp": "2026-09-18T14:59:00"
+    },
+    {
+      "id": "B2",
+      "source": "Ground-Charlie",
+      "source_type": "ground",
+      "location": "Grid-9",
+      "event": "No activity detected",
+      "timestamp": "2026-09-18T14:58:00"
+    }
+  ]
+}

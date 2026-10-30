@@ -1,0 +1,16 @@
+{
+  "case_id": "D",
+  "name": "INSUFFICIENT",
+  "description": "Only one source reports an event. No corroboration.",
+  "expected_verdict": "uncertain",
+  "reports": [
+    {
+      "id": "D1",
+      "source": "Satellite-2",
+      "source_type": "satellite",
+      "location": "Grid-12",
+      "event": "Heat signatures detected",
+      "timestamp": "2026-09-18T14:00:00"
+    }
+  ]
+}

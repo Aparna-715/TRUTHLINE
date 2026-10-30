@@ -1,0 +1,32 @@
+{
+  "case_id": "A",
+  "name": "SUPPORTED",
+  "description": "Three independent sources report the same event at the same location.",
+  "expected_verdict": "supported",
+  "reports": [
+    {
+      "id": "A1",
+      "source": "Drone-Alpha",
+      "source_type": "drone",
+      "location": "Grid-7",
+      "event": "3 vehicles detected",
+      "timestamp": "2026-09-18T14:55:00"
+    },
+    {
+      "id": "A2",
+      "source": "Ground-Beta",
+      "source_type": "ground",
+      "location": "Grid-7",
+      "event": "3 vehicles detected",
+      "timestamp": "2026-09-18T14:57:00"
+    },
+    {
+      "id": "A3",
+      "source": "Satellite-1",
+      "source_type": "satellite",
+      "location": "Grid-7",
+      "event": "3 vehicles detected",
+      "timestamp": "2026-09-18T14:56:00"
+    }
+  ]
+}

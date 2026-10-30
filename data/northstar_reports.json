@@ -1,0 +1,332 @@
+{
+  "scenario_time": "2026-09-18T15:00:00",
+  "tau": {
+    "drone": 5,
+    "ground": 15,
+    "satellite": 30,
+    "intel": 1440
+  },
+  "source_count": 40,
+  "reports": [
+    {
+      "id": "F001",
+      "source": "Drone-Bravo",
+      "source_type": "drone",
+      "location": "Grid-1",
+      "event": "No activity detected",
+      "timestamp": "2026-09-18T11:17:01.077064"
+    },
+    {
+      "id": "F002",
+      "source": "Ground-Delta",
+      "source_type": "ground",
+      "location": "Grid-4",
+      "event": "7 vehicles moving north",
+      "timestamp": "2026-09-18T11:36:20.613165"
+    },
+    {
+      "id": "F003",
+      "source": "Drone-Charlie",
+      "source_type": "drone",
+      "location": "Grid-1",
+      "event": "No activity detected",
+      "timestamp": "2026-09-18T14:30:04.729111"
+    },
+    {
+      "id": "F004",
+      "source": "Ground-Delta",
+      "source_type": "ground",
+      "location": "Grid-18",
+      "event": "Position abandoned",
+      "timestamp": "2026-09-18T12:52:58.985601"
+    },
+    {
+      "id": "F005",
+      "source": "Drone-Charlie",
+      "source_type": "drone",
+      "location": "Grid-6",
+      "event": "5 personnel observed",
+      "timestamp": "2026-09-18T11:29:57.267618"
+    },
+    {
+      "id": "F006",
+      "source": "Ground-Charlie",
+      "source_type": "ground",
+      "location": "Grid-7",
+      "event": "2 personnel observed",
+      "timestamp": "2026-09-18T10:12:45.030269"
+    },
+    {
+      "id": "F007",
+      "source": "Drone-Charlie",
+      "source_type": "drone",
+      "location": "Grid-13",
+      "event": "5 personnel observed",
+      "timestamp": "2026-09-18T14:29:10.711182"
+    },
+    {
+      "id": "F008",
+      "source": "Drone-Bravo",
+      "source_type": "drone",
+      "location": "Grid-15",
+      "event": "Convoy sighted",
+      "timestamp": "2026-09-18T12:18:12.241725"
+    },
+    {
+      "id": "F009",
+      "source": "Satellite-1",
+      "source_type": "satellite",
+      "location": "Grid-20",
+      "event": "4 personnel observed",
+      "timestamp": "2026-09-18T10:34:08.122747"
+    },
+    {
+      "id": "F010",
+      "source": "Drone-Charlie",
+      "source_type": "drone",
+      "location": "Grid-2",
+      "event": "Heat signatures detected",
+      "timestamp": "2026-09-18T11:40:56.611864"
+    },
+    {
+      "id": "F011",
+      "source": "Ground-Charlie",
+      "source_type": "ground",
+      "location": "Grid-4",
+      "event": "Position abandoned",
+      "timestamp": "2026-09-18T13:04:43.343096"
+    },
+    {
+      "id": "F012",
+      "source": "Ground-Charlie",
+      "source_type": "ground",
+      "location": "Grid-12",
+      "event": "Heat signatures detected",
+      "timestamp": "2026-09-18T13:12:07.759880"
+    },
+    {
+      "id": "F013",
+      "source": "Ground-Beta",
+      "source_type": "ground",
+      "location": "Grid-18",
+      "event": "8 vehicles stationary",
+      "timestamp": "2026-09-18T11:20:43.212853"
+    },
+    {
+      "id": "F014",
+      "source": "Intel-Desk",
+      "source_type": "intel",
+      "location": "Grid-9",
+      "event": "No activity detected",
+      "timestamp": "2026-09-18T10:03:07.322491"
+    },
+    {
+      "id": "F015",
+      "source": "Drone-Charlie",
+      "source_type": "drone",
+      "location": "Grid-8",
+      "event": "7 personnel observed",
+      "timestamp": "2026-09-18T10:53:06.169619"
+    },
+    {
+      "id": "F016",
+      "source": "Satellite-1",
+      "source_type": "satellite",
+      "location": "Grid-3",
+      "event": "4 personnel observed",
+      "timestamp": "2026-09-18T13:55:07.626757"
+    },
+    {
+      "id": "F017",
+      "source": "Intel-Desk",
+      "source_type": "intel",
+      "location": "Grid-13",
+      "event": "Position abandoned",
+      "timestamp": "2026-09-18T10:34:21.865209"
+    },
+    {
+      "id": "F018",
+      "source": "Satellite-1",
+      "source_type": "satellite",
+      "location": "Grid-5",
+      "event": "Heat signatures detected",
+      "timestamp": "2026-09-18T13:44:30.300162"
+    },
+    {
+      "id": "F019",
+      "source": "Intel-Desk",
+      "source_type": "intel",
+      "location": "Grid-12",
+      "event": "8 vehicles stationary",
+      "timestamp": "2026-09-18T13:52:38.544826"
+    },
+    {
+      "id": "F020",
+      "source": "Drone-Charlie",
+      "source_type": "drone",
+      "location": "Grid-2",
+      "event": "3 vehicles stationary",
+      "timestamp": "2026-09-18T10:41:23.479975"
+    },
+    {
+      "id": "F021",
+      "source": "Intel-Desk",
+      "source_type": "intel",
+      "location": "Grid-20",
+      "event": "Convoy sighted",
+      "timestamp": "2026-09-18T14:39:04.124614"
+    },
+    {
+      "id": "F022",
+      "source": "Satellite-2",
+      "source_type": "satellite",
+      "location": "Grid-18",
+      "event": "2 vehicles detected",
+      "timestamp": "2026-09-18T10:41:29.258924"
+    },
+    {
+      "id": "F023",
+      "source": "Satellite-2",
+      "source_type": "satellite",
+      "location": "Grid-11",
+      "event": "Convoy sighted",
+      "timestamp": "2026-09-18T14:24:45.447136"
+    },
+    {
+      "id": "F024",
+      "source": "SIGINT-Unit",
+      "source_type": "intel",
+      "location": "Grid-1",
+      "event": "Heat signatures detected",
+      "timestamp": "2026-09-18T10:13:45.771216"
+    },
+    {
+      "id": "F025",
+      "source": "Drone-Bravo",
+      "source_type": "drone",
+      "location": "Grid-10",
+      "event": "No activity detected",
+      "timestamp": "2026-09-18T10:47:10.952055"
+    },
+    {
+      "id": "F026",
+      "source": "Satellite-2",
+      "source_type": "satellite",
+      "location": "Grid-6",
+      "event": "6 vehicles detected",
+      "timestamp": "2026-09-18T12:17:15.902941"
+    },
+    {
+      "id": "F027",
+      "source": "Intel-Desk",
+      "source_type": "intel",
+      "location": "Grid-1",
+      "event": "5 personnel observed",
+      "timestamp": "2026-09-18T14:24:39.805071"
+    },
+    {
+      "id": "F028",
+      "source": "Ground-Charlie",
+      "source_type": "ground",
+      "location": "Grid-2",
+      "event": "2 vehicles moving north",
+      "timestamp": "2026-09-18T13:46:13.215927"
+    },
+    {
+      "id": "F029",
+      "source": "Intel-Desk",
+      "source_type": "intel",
+      "location": "Grid-3",
+      "event": "3 vehicles stationary",
+      "timestamp": "2026-09-18T10:06:33.637253"
+    },
+    {
+      "id": "F030",
+      "source": "Intel-Desk",
+      "source_type": "intel",
+      "location": "Grid-18",
+      "event": "Convoy sighted",
+      "timestamp": "2026-09-18T14:08:47.529974"
+    },
+    {
+      "id": "F031",
+      "source": "Ground-Beta",
+      "source_type": "ground",
+      "location": "Grid-10",
+      "event": "8 personnel observed",
+      "timestamp": "2026-09-18T12:59:06.017676"
+    },
+    {
+      "id": "F032",
+      "source": "SIGINT-Unit",
+      "source_type": "intel",
+      "location": "Grid-4",
+      "event": "6 vehicles moving north",
+      "timestamp": "2026-09-18T13:44:07.447628"
+    },
+    {
+      "id": "F033",
+      "source": "Drone-Alpha",
+      "source_type": "drone",
+      "location": "Grid-19",
+      "event": "No activity detected",
+      "timestamp": "2026-09-18T12:12:55.883179"
+    },
+    {
+      "id": "F034",
+      "source": "Drone-Alpha",
+      "source_type": "drone",
+      "location": "Grid-2",
+      "event": "6 vehicles detected",
+      "timestamp": "2026-09-18T13:49:46.520905"
+    },
+    {
+      "id": "F035",
+      "source": "Drone-Bravo",
+      "source_type": "drone",
+      "location": "Grid-17",
+      "event": "Position abandoned",
+      "timestamp": "2026-09-18T13:47:04.477137"
+    },
+    {
+      "id": "F036",
+      "source": "Ground-Beta",
+      "source_type": "ground",
+      "location": "Grid-19",
+      "event": "No activity detected",
+      "timestamp": "2026-09-18T12:06:17.335703"
+    },
+    {
+      "id": "F037",
+      "source": "SIGINT-Unit",
+      "source_type": "intel",
+      "location": "Grid-7",
+      "event": "Convoy sighted",
+      "timestamp": "2026-09-18T14:29:53.454759"
+    },
+    {
+      "id": "F038",
+      "source": "SIGINT-Unit",
+      "source_type": "intel",
+      "location": "Grid-14",
+      "event": "2 vehicles detected",
+      "timestamp": "2026-09-18T12:38:49.598936"
+    },
+    {
+      "id": "F039",
+      "source": "Drone-Bravo",
+      "source_type": "drone",
+      "location": "Grid-13",
+      "event": "4 vehicles moving north",
+      "timestamp": "2026-09-18T11:20:59.541039"
+    },
+    {
+      "id": "F040",
+      "source": "Ground-Charlie",
+      "source_type": "ground",
+      "location": "Grid-7",
+      "event": "7 vehicles stationary",
+      "timestamp": "2026-09-18T12:18:11.210720"
+    }
+  ]
+}
