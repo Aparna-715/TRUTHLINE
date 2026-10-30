@@ -1,0 +1,143 @@
+/* Sidebar — dark terminal rail */
+
+.sidebar {
+  width: var(--sidebar-w);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0.9rem 0.75rem;
+  background: linear-gradient(180deg, rgba(8, 24, 14, 0.94), rgba(4, 10, 6, 0.96));
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-right: 1px solid var(--line-strong);
+  box-shadow: 4px 0 28px rgba(0, 0, 0, 0.55);
+  z-index: 20;
+}
+
+/* ── Brand ──────────────────────────────────────────────────────────────── */
+.sidebar__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.15rem 0.25rem 0.85rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.sidebar__logo {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 8px rgba(0, 255, 156, 0.45));
+}
+
+.sidebar__name {
+  font-weight: 800;
+  font-size: 0.9rem;
+  letter-spacing: 0.16em;
+  color: var(--text-strong);
+  text-shadow: 0 0 14px var(--glow-soft);
+}
+
+.sidebar__tag {
+  font-size: 0.53rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--neon-deep);
+  margin-top: 0.05rem;
+}
+
+/* ── Nav ────────────────────────────────────────────────────────────────── */
+.sidebar__nav {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.sidebar__nav a {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.45rem 0.55rem;
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-left: 2px solid transparent;
+  transition: color 0.14s, background 0.14s, border-color 0.14s;
+}
+
+.sidebar__nav a:hover {
+  color: var(--text-strong);
+  background: rgba(0, 255, 156, 0.05);
+  border-left-color: var(--neon-deep);
+}
+
+.sidebar__nav a.active {
+  color: var(--neon);
+  background: rgba(0, 255, 156, 0.10);
+  border-left-color: var(--neon);
+  text-shadow: 0 0 12px var(--glow-soft);
+}
+
+.sidebar__glyph {
+  font-size: 0.8rem;
+  line-height: 1;
+  width: 0.9rem;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* ── Status block ───────────────────────────────────────────────────────── */
+.sidebar__status {
+  margin-top: auto;
+  padding: 0.7rem 0.45rem 0.15rem;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 0.32rem;
+}
+
+.sidebar__status-title {
+  font-size: 0.53rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 0.1rem;
+}
+
+.status-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.64rem;
+  color: var(--text-muted);
+  letter-spacing: 0.03em;
+}
+
+/* ── Narrow screens ─────────────────────────────────────────────────────── */
+@media (max-width: 980px) {
+  .sidebar {
+    right: 0;
+    bottom: auto;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 0.5rem 0.85rem;
+    border-right: none;
+    border-bottom: 1px solid var(--line-strong);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+  }
+
+  .sidebar__brand { border: none; padding: 0; }
+  .sidebar__tag { display: none; }
+  .sidebar__nav { flex-direction: row; margin: 0; }
+  .sidebar__status { display: none; }
+}

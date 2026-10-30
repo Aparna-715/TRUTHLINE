@@ -1,0 +1,21 @@
+/* App shell only. Page/panel styles live in styles/layout.css and
+   components/components.css — this file deliberately stays tiny. */
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: var(--sidebar-w);
+  padding: 1.1rem 1.4rem 3rem;
+  min-width: 0;
+}
+
+@media (max-width: 980px) {
+  .main-content {
+    margin-left: 0;
+    padding-top: 4.2rem;
+  }
+}
